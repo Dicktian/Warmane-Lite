@@ -76,9 +76,9 @@ En PowerShell, si la política de ejecución bloquea `npm`, utiliza `npm.cmd ins
 Copia `.env.example` como `.env` y edita los valores:
 
 ```ini
-DISCORD_TOKEN=TU_TOKEN_PRIVADO
-DISCORD_CLIENT_ID=ID_DE_TU_APLICACION
-DISCORD_GUILD_ID=ID_DE_TU_SERVIDOR
+DISCORD_TOKEN= TU_TOKEN_PRIVADO
+DISCORD_CLIENT_ID= ID_DE_TU_APLICACION
+DISCORD_GUILD_ID= ID_DE_TU_SERVIDOR
 SERVER_UTC_OFFSET=0
 ```
 
@@ -89,7 +89,7 @@ SERVER_UTC_OFFSET=0
 | `DISCORD_GUILD_ID` | Opcional: ID de un servidor de pruebas para registrar comandos allí |
 | `SERVER_UTC_OFFSET` | Desfase horario respecto de UTC utilizado por `/servertime` |
 
-**Seguridad:** no publiques `.env`, tokens, contraseñas ni claves en GitHub. Si un token se filtra, regénéralo desde el Developer Portal.
+**Seguridad:** no publiques `.env`, tokens, contraseñas ni claves en ningún sitio, si un token se filtra, regénéralo desde el Developer Portal de Discord.
 
 ### 4. Añadir el bot al servidor
 
@@ -131,7 +131,7 @@ Reemplaza la ruta de ejemplo por la ubicación real de `node.exe`.
 4. Envía el comando.
 5. Utiliza **Resumen** y **Equipamiento** para cambiar de vista.
 
-Ejemplo: personaje `Comunxanxo`, reino `Icecrown`.
+Ejemplo: personaje `xxxxxxxxxx`, reino `xxxxxxxx`.
 
 ### Consultar la hora configurada
 
@@ -153,7 +153,7 @@ Escribe `/servertime`. El bot responderá con la hora calculada a partir del des
 ## Ejecución continua
 
 **Local:** el bot funciona mientras el computador esté encendido y el proceso siga activo.  
-**24/7:** puedes desplegarlo en un VPS o plataforma que permita ejecutar procesos Node.js continuamente. Configura allí las variables de entorno como secretos, no como archivos públicos.
+**24/7:** puedes desplegarlo en un VPS o plataforma que permita ejecutar procesos Node.js continuamente, configura allí las variables de entorno como secretos, no como archivos públicos.
 
 ## Estructura del proyecto
 
@@ -168,7 +168,3 @@ Bot_warmame_Lite/
 ```
 
 El archivo `.env` se crea localmente y **no debe incluirse en el repositorio**.
-
-## Licencia
-
-No se incluye una licencia de código abierto en esta distribución. Si deseas permitir reutilización y contribuciones bajo condiciones específicas, añade un archivo `LICENSE` al repositorio.
